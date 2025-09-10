@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afsar Ali - About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="w-full">
+    <!-- Header -->
+    <header class="glassmorphism fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-white tracking-wider">Afsar Ali</a>
+            <div class="hidden md:flex items-center space-x-8 text-lg">
+                <a href="/about.html" class="nav-link tracking-wide">About</a>
+                <a href="/projects.html" class="nav-link tracking-wide">Projects</a>
+                <a href="/contact.html" class="nav-link tracking-wide">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white"><i data-lucide="menu"></i></button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="/about.html" class="block py-2 px-6 text-center">About</a>
+            <a href="/projects.html" class="block py-2 px-6 text-center">Projects</a>
+            <a href="/contact.html" class="block py-2 px-6 text-center">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <h2 class="section-heading">About Me</h2>
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2">
+                    <img src="/images/img1.jpeg" alt="A portrait of Afsar Ali" class="rounded-full w-64 h-64 mx-auto md:w-full md:h-auto border-4 border-gray-700 glow-effect">
+                </div>
+                <div class="md:col-span-3">
+                    <p class="text-lg mb-6">Hello! I'm Afsar Ali, an enthusiastic and motivated software developer with a strong foundation in Node.js and back-end technologies. My passion for coding sparked from a curiosity about how modern applications work, which has driven me to dive deep into the world of software engineering and the powerful Node.js ecosystem.</p>
+                    <p class="text-lg mb-8">I am passionate about solving complex problems and building efficient, scalable applications. I am a quick learner, dedicated to writing clean and maintainable code. Through my academic and personal projects, I've gained hands-on experience building RESTful APIs and exploring real-time application concepts. I am eager to apply my skills to real-world challenges and contribute to a forward-thinking team.</p>
+                    <h3 class="text-2xl font-bold text-white mb-4">My Technical Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Express.js</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">REST APIs</span>
+                        <span class="skill-badge">HTML5 & CSS3</span>
+                        <span class="skill-badge">Git & GitHub</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">Postman</span>
+                        <span class="skill-badge">Object-Oriented Programming</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-700 mt-20">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-400">
+            <p>&copy; <span id="year"></span> Afsar Ali. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
+
